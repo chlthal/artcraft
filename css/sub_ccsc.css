@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.cooperation_main {
+    width: 100%;
+    padding: 150px 100px;
+    background-color: #FFFCED;
+    margin: 0 auto;
+}
+.cooperation_title {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+.cooperation_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 124px;     
+    row-gap: 60px;        
+    justify-content: center;
+    padding: 0;
+  }
+  
+.cooperation_card {
+    width: 332px; 
+    background-color: transparent;
+  }
+  
+.cooperation_card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-color: black;
+  }
+  
+.desc {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 45px;
+    line-height: 1.5;
+    color: #222;
+  }
+  
+.brand_name {
+    font-size: 26px;
+    font-weight: 700;
+    padding-top: 18px;
+  }
+  
+.tags {
+    display: flex;
+    gap: 8px;
+    padding-top: 24px;
+    flex-wrap: wrap;
+  }
+  
+
+  .tag {
+    font-size: 16px;
+    font-weight: 400;
+    padding: 4px 16px;
+    border-radius: 999px;
+    background-color: #EDEDED;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+  
+  .tag:hover{
+    background-color: #ffdabf;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .cooperation_grid {
+      grid-template-columns: repeat(2, 1fr);  /* 2열 */
+      column-gap: 60px; /* 태블릿에서 적당한 여백 */
+      row-gap: 40px;
+      justify-content: center;
+    }
+  
+    .cooperation_card {
+      width: 100%;
+      max-width: 100%; /* 가득 차게 */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .cooperation_grid {
+      grid-template-columns: 1fr; /* 1열 */
+      column-gap: 0;
+    }
+  
+    .cooperation_card {
+      width: 100%;
+    }
+  
+    .cooperation_card img {
+      width: 100%;
+      height: auto;
+    }
+  }
